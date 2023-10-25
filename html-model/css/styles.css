@@ -31,44 +31,71 @@ a, a:hover{
 html, body{
     background-color:var(--dsc-color-bg-primary);
 }
-
-header {
-    background-color: var(--dsc-color-bg-secondary);
-    height: 70px;
-    display: flex;
-    align-items: center;
+main{
+    padding: 0 20px;
 }
-
-nav {
-    color: var(--dsc-color-font-primary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
+/* ----------------------------------------------------------------------------
+Generics styles
+*/
 .dsc-container{
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
 }
-
-
+.dsc-mb20 {
+    margin-bottom: 20px;
+}
+/* ----------------------------------------------------------------------------
+header styles
+*/
+header {
+    background-color: var(--dsc-color-bg-secondary);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    /* mobile responsive */
+    padding: 0 20px;
+}
+nav {
+    color: var(--dsc-color-font-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+nav a{
+    font-size: 14px;
+    font-weight: 700;
+}
+nav h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+/* ----------------------------------------------------------------------------
+Card styles
+*/
 .dsc-card{
     border: 1px solid var(--dsc-color-card-border); 
     background-color: var(--dsc-color-card-bg);
     border-radius: 4px;
 }
-
-
 .dsc-line-bottom{
     border-bottom: 1px solid var(--dsc-color-card-border);
 }
 
-
+/* ----------------------------------------------------------------------------
+Buttom styles
+*/
 .dsc-btn-page-container{
-    width: 220px;
+    /* width: 220px; */
+    width: 100%;
     display: grid;
     grid-gap: 20px;
+}
+
+@media (min-width: 576px) {
+    .dsc-btn-page-container{
+        width: 220px;
+    }
 }
 
 .dsc-btn{
@@ -79,7 +106,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px;
+    width: 100%;
+    /* width: 220px; */
 }
 
 .dsc-btn-blue{
@@ -91,8 +119,4 @@ nav {
     background-color: var(--dsc-color-btn-inverse);
     color: var(--dsc-color-btn-primary);
     border: 1px solid var(--dsc-color-btn-primary);
-}
-
-.dsc-mb20 {
-    margin-bottom: 20px;
 }
