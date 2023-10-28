@@ -18,25 +18,23 @@
 
     --dsc-color-error: #f33;
 }
-
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: "Open Sans";
 }
-
 a, a:hover{
     text-decoration: none;
     color: unset;
 }
-
 html, body{
     background-color:var(--dsc-color-bg-primary);
 }
 main{
     padding: 0 20px;
 }
+
 /* ----------------------------------------------------------------------------
 Generics styles
 */
@@ -51,6 +49,7 @@ Generics styles
 .dsc-mt20 {
     margin-top: 20px;
 }
+
 /* ----------------------------------------------------------------------------
 header styles
 */
@@ -75,6 +74,14 @@ nav a{
 nav h1{
     font-size: 24px;
     font-weight: 700;
+}
+.dsc-logged-user{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.dsc-logged-user p{
+    font-size: 12px;    
 }
 /* ----------------------------------------------------------------------------
 Card styles
@@ -115,19 +122,16 @@ Buttom styles
     align-items: center;
     /* width: 220px; */
 }
-
 .dsc-btn-blue{
     background-color: var(--dsc-color-btn-primary);
     color: var(--dsc-color-btn-inverse);
     border: none;
 }
-
 .dsc-btn-white{
     background-color: var(--dsc-color-btn-inverse);
     color: var(--dsc-color-btn-primary);
     border: 1px solid var(--dsc-color-btn-primary);
 }
-
 .dsc-btn-next-page{
     border: 1px solid var(--dsc-color-btn-primary);
     background-color: var(--dsc-color-btn-inverse);
@@ -142,7 +146,6 @@ Buttom styles
 
 /* ----------------------------------------------------------- */
 /* Search bar styles */
-
 .dsc-search-bar{
     height: 40px;
     display: flex;
@@ -208,7 +211,6 @@ Buttom styles
     margin: 20px 0;
     width: 100%;
 }
-
 .dsc-form-control:focus{
     outline: none;
 }
@@ -224,11 +226,9 @@ Buttom styles
     border-radius: 4px;
     border: 1px solid var(--dsc-color-card-border);
 }
-
 .dsc-input-error{
     border: 1px solid var(--dsc-color-error);
 }
-
 .dsc-form-error{
     color: var(--dsc-color-error);
     font-size: 12px;
